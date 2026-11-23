@@ -1,1 +1,811 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="KfvQwoyOWHTTAf-rvSZL3X5_CO4Ax1LBeCtlpO5dm70">
+<meta name="description" content="Free online business calculators, import and export guides, small business management and productivity resources from MosesDigital.">
+<meta name="keywords" content="free business calculator, Kenya business tools, import export guide, pricing calculator, small business">
+<meta name="author" content="MosesDigital">
+
+<title>MosesDigital | Free Online Business Tools</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  color: #263746;
+  background: #f5f8fb;
+}
+
+header {
+  background: #123b5d;
+  color: white;
+  padding: 28px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header p {
+  color: #dceaf5;
+}
+
+nav {
+  background: #0c2941;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 9px 12px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f4c95d;
+}
+
+.hero {
+  background: #e6f0f7;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.hero h2 {
+  color: #123b5d;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 750px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px;
+}
+
+section {
+  background: white;
+  margin: 22px 0;
+  padding: 26px;
+  border-radius: 9px;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.06);
+  scroll-margin-top: 15px;
+}
+
+section h2 {
+  color: #123b5d;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e4edf4;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #174f73;
+  margin: 20px 0 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul, ol {
+  padding-left: 23px;
+  margin: 10px 0 18px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+a {
+  color: #12659a;
+}
+
+.tool-card {
+  background: #f1f6fa;
+  border-left: 4px solid #2879a9;
+  padding: 18px;
+  margin: 18px 0;
+  border-radius: 6px;
+}
+
+.tool-card h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbcbd7;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+}
+
+button {
+  background: #123b5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+}
+
+button:hover {
+  background: #21658e;
+}
+
+.result {
+  background: #e6f0f7;
+  padding: 17px;
+  margin-top: 18px;
+  border-radius: 6px;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.calculator-grid > div {
+  min-width: 0;
+}
+
+.calculator-note {
+  font-size: 14px;
+  color: #526575;
+  margin-top: 8px;
+}
+
+footer {
+  background: #0c2941;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+footer a {
+  color: #dceaf5;
+  display: inline-block;
+  margin: 5px;
+}
+
+.small {
+  font-size: 13px;
+  color: #dceaf5;
+  margin-top: 10px;
+}
+
+@media(max-width:600px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  nav a {
+    padding: 7px 9px;
+    font-size: 13px;
+  }
+
+  section {
+    padding: 19px;
+  }
+
+  .hero h2 {
+    font-size: 23px;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    padding: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MosesDigital</h1>
+  <p>Free Online Tools and Resources</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#tools">Tools</a>
+  <a href="#import-export">Import &amp; Export</a>
+  <a href="#business">Business</a>
+  <a href="#productivity">Productivity</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<div class="hero" id="home">
+  <h2>Welcome to MosesDigital</h2>
+  <p>
+    Your practical online resource for free business tools,
+    financial calculations, international trade information,
+    small business management and productivity resources.
+  </p>
+</div>
+
+<div class="container">
+
+<!-- BUSINESS CALCULATORS -->
+<section id="tools">
+  <h2>Free Online Business Tools</h2>
+
+  <p>
+    Use our free calculators to understand business costs,
+    manage finances, estimate profits and make better decisions.
+  </p>
+
+  <!-- CALCULATOR 1 -->
+  <div class="tool-card">
+    <h3>Business Income &amp; Expense Calculator</h3>
+
+    <p>
+      Calculate your total income, expenses, net profit or loss,
+      and profit margin.
+    </p>
+
+    <label for="income">Total Business Income (KSh)</label>
+    <input type="number" id="income" min="0" step="0.01"
+    placeholder="Enter total income">
+
+    <label for="expenses">Total Business Expenses (KSh)</label>
+    <input type="number" id="expenses" min="0" step="0.01"
+    placeholder="Enter total expenses">
+
+    <button type="button" onclick="calculateBusiness()">
+      Calculate Income &amp; Expenses
+    </button>
+
+    <div class="result" id="results" aria-live="polite">
+      Your business results will appear here.
+    </div>
+  </div>
+
+  <!-- CALCULATOR 2 -->
+  <div class="tool-card">
+    <h3>Business Cost &amp; Pricing Calculator</h3>
+
+    <p>
+      Calculate total costs, unit cost, recommended selling price,
+      projected sales and expected profit.
+    </p>
+
+    <label for="md-product">Product or Business Item</label>
+    <input type="text" id="md-product" placeholder="e.g. Shoes, bags, electronics">
+
+    <label for="md-quantity">Number of Units</label>
+    <input type="number" id="md-quantity" min="1" step="1" value="1">
+
+    <div class="calculator-grid">
+      <div>
+        <label for="md-purchase">Purchase / Production Cost (KSh)</label>
+        <input type="number" id="md-purchase" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-transport">Transport / Shipping (KSh)</label>
+        <input type="number" id="md-transport" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-packaging">Packaging Cost (KSh)</label>
+        <input type="number" id="md-packaging" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-labour">Labour Cost (KSh)</label>
+        <input type="number" id="md-labour" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-other">Taxes &amp; Other Charges (KSh)</label>
+        <input type="number" id="md-other" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-overheads">Business Overheads (KSh)</label>
+        <input type="number" id="md-overheads" min="0" step="0.01" value="0">
+      </div>
+
+      <div>
+        <label for="md-markup">Desired Markup (%)</label>
+        <input type="number" id="md-markup" min="0" step="0.01" value="30">
+      </div>
+    </div>
+
+    <p class="calculator-note">
+      Markup is calculated on your cost, not on your selling price.
+    </p>
+
+    <button type="button" onclick="mdCalculateCost()">
+      Calculate Cost &amp; Selling Price
+    </button>
+
+    <div class="result" id="md-cost-results" aria-live="polite">
+      Your cost and pricing results will appear here.
+    </div>
+  </div>
+</section>
+
+<!-- IMPORT EXPORT -->
+<section id="import-export">
+  <h2>Import &amp; Export Resources</h2>
+
+  <p>
+    Learn the basics of international trade and discover useful
+    information for importing and exporting products between
+    Kenya, Africa and global markets.
+  </p>
+
+  <h3>1. How to Start an Import Business</h3>
+  <ol>
+    <li>Identify products with market demand.</li>
+    <li>Research reliable international suppliers.</li>
+    <li>Compare supplier prices and shipping costs.</li>
+    <li>Confirm import permits and regulatory requirements.</li>
+    <li>Calculate the complete landed cost.</li>
+    <li>Arrange shipping and customs clearance.</li>
+    <li>Plan distribution and sales.</li>
+  </ol>
+
+  <h3>2. Essential Import Documents</h3>
+  <ul>
+    <li>Commercial invoice.</li>
+    <li>Packing list.</li>
+    <li>Bill of Lading or Airway Bill.</li>
+    <li>Import Declaration Form, where applicable.</li>
+    <li>Certificate of Origin, where required.</li>
+    <li>Certificate of Conformity, where applicable.</li>
+    <li>Relevant import permits and licences.</li>
+    <li>Customs declaration documents.</li>
+  </ul>
+
+  <h3>3. Customs Clearance</h3>
+  <p>
+    Customs clearance involves submitting required documentation,
+    correctly classifying goods, assessing applicable taxes and
+    duties, and obtaining customs release. Importers can engage
+    licensed customs agents to assist with the process.
+  </p>
+
+  <h3>4. Exporting Goods from Kenya</h3>
+  <ol>
+    <li>Identify a suitable export market.</li>
+    <li>Research destination-country requirements.</li>
+    <li>Identify buyers and agree on commercial terms.</li>
+    <li>Prepare invoices and packing documentation.</li>
+    <li>Obtain applicable export permits and certificates.</li>
+    <li>Arrange transport, insurance and customs procedures.</li>
+  </ol>
+
+  <h3>5. Understanding Landed Costs</h3>
+  <p>
+    Landed cost is the total cost of getting imported goods
+    to their intended destination.
+  </p>
+
+  <ul>
+    <li>Purchase price.</li>
+    <li>International freight.</li>
+    <li>Insurance.</li>
+    <li>Customs duties.</li>
+    <li>Applicable taxes and levies.</li>
+    <li>Clearing and handling charges.</li>
+    <li>Local transportation.</li>
+  </ul>
+
+  <h3>6. Avoiding Import Business Risks</h3>
+  <ul>
+    <li>Verify suppliers before making payments.</li>
+    <li>Request samples where practical.</li>
+    <li>Confirm product specifications.</li>
+    <li>Understand international payment terms.</li>
+    <li>Check shipping and insurance arrangements.</li>
+    <li>Confirm regulatory requirements before shipment.</li>
+  </ul>
+
+  <h3>7. Useful Official Trade Resources</h3>
+  <ul>
+    <li><a href="https://www.kra.go.ke/" target="_blank" rel="noopener">Kenya Revenue Authority (KRA)</a></li>
+    <li><a href="https://www.kentrade.go.ke/" target="_blank" rel="noopener">KenTrade</a></li>
+    <li><a href="https://www.kebs.org/" target="_blank" rel="noopener">Kenya Bureau of Standards (KEBS)</a></li>
+    <li><a href="https://www.kephis.go.ke/" target="_blank" rel="noopener">KEPHIS</a></li>
+  </ul>
+
+  <p>
+    <strong>MosesDigital Tip:</strong>
+    Always verify applicable regulations, product classification
+    and taxes before committing to an international purchase.
+  </p>
+</section>
+
+<!-- BUSINESS -->
+<section id="business">
+  <h2>Small Business Management</h2>
+
+  <p>
+    Practical information to help entrepreneurs establish,
+    manage and grow sustainable businesses.
+  </p>
+
+  <h3>1. Business Planning</h3>
+  <p>
+    A business plan provides direction. Identify your products,
+    target customers, competitors, operating costs, marketing
+    strategy and financial goals.
+  </p>
+
+  <h3>2. Financial Record Keeping</h3>
+  <p>
+    Maintain accurate records of business income, expenses,
+    purchases, sales and payments. Good records help you
+    understand business performance and prepare for tax obligations.
+  </p>
+
+  <h3>3. Managing Cash Flow</h3>
+  <p>
+    Monitor money entering and leaving your business. Plan
+    payments carefully, control unnecessary spending and
+    maintain adequate operating funds.
+  </p>
+
+  <h3>4. Pricing Your Products</h3>
+  <p>
+    Consider purchase costs, transportation, operating expenses,
+    taxes and desired profit when setting prices. Review your
+    prices regularly as costs and market conditions change.
+  </p>
+
+  <h3>5. Customer Service</h3>
+  <p>
+    Respond promptly to customer enquiries, communicate honestly,
+    deliver on promises and address complaints professionally.
+    Good customer service encourages repeat business.
+  </p>
+
+  <h3>6. Growing Your Business</h3>
+  <ul>
+    <li>Understand your target market.</li>
+    <li>Build a reliable customer base.</li>
+    <li>Promote your products online.</li>
+    <li>Monitor business performance.</li>
+    <li>Reinvest carefully in business growth.</li>
+    <li>Explore new markets and opportunities.</li>
+  </ul>
+</section>
+
+<!-- PRODUCTIVITY -->
+<section id="productivity">
+  <h2>Productivity Resources</h2>
+
+  <p>
+    Improve your time management, organisation and efficiency
+    with practical productivity techniques.
+  </p>
+
+  <h3>1. Daily Planning</h3>
+  <p>
+    Write down your most important tasks each day. Prioritise
+    activities according to urgency and importance.
+  </p>
+
+  <h3>2. Time Management</h3>
+  <p>
+    Allocate specific periods for important activities. Avoid
+    unnecessary interruptions and review your progress regularly.
+  </p>
+
+  <h3>3. Digital Organisation</h3>
+  <p>
+    Organise business documents, invoices, customer information
+    and important files using clearly labelled folders.
+  </p>
+
+  <h3>4. Useful Free Digital Tools</h3>
+  <ul>
+    <li><a href="https://www.canva.com/" target="_blank" rel="noopener">Canva</a> – Design and marketing materials.</li>
+    <li><a href="https://docs.google.com/" target="_blank" rel="noopener">Google Docs</a> – Online document creation.</li>
+    <li><a href="https://sheets.google.com/" target="_blank" rel="noopener">Google Sheets</a> – Spreadsheets and record keeping.</li>
+    <li><a href="https://calendar.google.com/" target="_blank" rel="noopener">Google Calendar</a> – Scheduling and planning.</li>
+  </ul>
+
+  <h3>5. Working More Efficiently</h3>
+  <ul>
+    <li>Set realistic daily goals.</li>
+    <li>Break large tasks into smaller activities.</li>
+    <li>Reduce distractions.</li>
+    <li>Review completed tasks.</li>
+    <li>Make time for learning new skills.</li>
+  </ul>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About MosesDigital</h2>
+
+  <p>
+    MosesDigital is a digital platform dedicated to providing
+    useful, accessible and practical online tools and resources
+    to individuals, entrepreneurs and small businesses.
+  </p>
+
+  <h3>Our Mission</h3>
+  <p>
+    To make digital tools and useful business information
+    accessible to everyone, helping people save time,
+    improve productivity and grow their businesses.
+  </p>
+
+  <h3>Our Vision</h3>
+  <p>
+    To become a trusted digital resource for entrepreneurs
+    and small businesses across Africa and beyond.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact MosesDigital</h2>
+
+  <p>
+    Have a question, suggestion or business enquiry?
+    We would love to hear from you.
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:mosesdigital254@gmail.com">
+      mosesdigital254@gmail.com
+    </a>
+  </p>
+</section>
+
+<!-- PRIVACY -->
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+
+  <p><strong>Last updated: November 2026</strong></p>
+
+  <p>
+    MosesDigital respects the privacy of visitors. This website
+    provides free online tools and informational resources.
+  </p>
+
+  <h3>Information Collection</h3>
+  <p>
+    Our calculators process figures entered by visitors within
+    their browser. They do not require visitors to submit
+    financial information to MosesDigital.
+  </p>
+
+  <h3>Cookies and Advertising</h3>
+  <p>
+    Third-party services, including advertising providers, may
+    use cookies or similar technologies if implemented on this
+    website. Visitors should review the privacy policies of
+    those providers.
+  </p>
+
+  <h3>External Links</h3>
+  <p>
+    Our website may contain links to external websites.
+    MosesDigital is not responsible for the privacy practices
+    or content of third-party websites.
+  </p>
+
+  <h3>Contact</h3>
+  <p>
+    For privacy-related enquiries, contact:
+    <a href="mailto:mosesdigital254@gmail.com">
+      mosesdigital254@gmail.com
+    </a>
+  </p>
+</section>
+
+<!-- DISCLAIMER -->
+<section id="disclaimer">
+  <h2>Disclaimer</h2>
+
+  <p>
+    Information published on MosesDigital is provided for general
+    educational and informational purposes. It should not be
+    treated as legal, tax, customs or professional financial advice.
+  </p>
+
+  <p>
+    Import and export regulations, taxes and procedures may
+    change. Always confirm current requirements with relevant
+    authorities before making business decisions.
+  </p>
+
+  <p>
+    Calculator results are estimates based on figures entered
+    by visitors and should be independently verified.
+  </p>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <p><strong>MosesDigital</strong></p>
+  <p>Free Online Tools and Resources</p>
+
+  <p>
+    <a href="#home">Home</a>
+    <a href="#tools">Free Tools</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#disclaimer">Disclaimer</a>
+  </p>
+
+  <p class="small">
+    © 2026 MosesDigital. All rights reserved.
+  </p>
+</footer>
+
+<script>
+function formatMoney(amount) {
+  return amount.toLocaleString("en-KE", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+}
+
+/* BUSINESS INCOME CALCULATOR */
+function calculateBusiness() {
+  const incomeField = document.getElementById("income");
+  const expensesField = document.getElementById("expenses");
+  const results = document.getElementById("results");
+
+  const income = Number(incomeField.value);
+  const expenses = Number(expensesField.value);
+
+  if (
+    incomeField.value === "" ||
+    expensesField.value === "" ||
+    !Number.isFinite(income) ||
+    !Number.isFinite(expenses) ||
+    income < 0 ||
+    expenses < 0
+  ) {
+    results.textContent =
+      "Please enter valid, non-negative income and expense amounts.";
+    return;
+  }
+
+  const profit = income - expenses;
+  const margin = income > 0 ? (profit / income) * 100 : 0;
+
+  results.textContent =
+    "Total Income: KSh " + formatMoney(income) + "\n" +
+    "Total Expenses: KSh " + formatMoney(expenses) + "\n" +
+    (profit >= 0 ? "Net Profit: " : "Net Loss: ") +
+    "KSh " + formatMoney(Math.abs(profit)) + "\n" +
+    "Profit Margin: " + margin.toFixed(2) + "%";
+}
+
+/* BUSINESS COST & PRICING CALCULATOR */
+function mdCalculateCost() {
+  const ids = [
+    "md-quantity",
+    "md-purchase",
+    "md-transport",
+    "md-packaging",
+    "md-labour",
+    "md-other",
+    "md-overheads",
+    "md-markup"
+  ];
+
+  const results = document.getElementById("md-cost-results");
+  const values = {};
+
+  for (const id of ids) {
+    const input = document.getElementById(id);
+
+    if (
+      input.value === "" ||
+      !Number.isFinite(Number(input.value)) ||
+      Number(input.value) < 0
+    ) {
+      results.textContent =
+        "Please fill in all calculator fields with valid non-negative numbers.";
+      return;
+    }
+
+    values[id] = Number(input.value);
+  }
+
+  const quantity = values["md-quantity"];
+
+  if (!Number.isInteger(quantity) || quantity < 1) {
+    results.textContent =
+      "Number of units must be a whole number greater than zero.";
+    return;
+  }
+
+  const purchase = values["md-purchase"];
+  const transport = values["md-transport"];
+  const packaging = values["md-packaging"];
+  const labour = values["md-labour"];
+  const other = values["md-other"];
+  const overheads = values["md-overheads"];
+  const markup = values["md-markup"];
+
+  const totalCost =
+    purchase + transport + packaging + labour + other + overheads;
+
+  const unitCost = totalCost / quantity;
+  const sellingPrice = unitCost * (1 + markup / 100);
+  const totalSales = sellingPrice * quantity;
+  const totalProfit = totalSales - totalCost;
+  const profitMargin = totalSales > 0
+    ? (totalProfit / totalSales) * 100
+    : 0;
+
+  const product = document.getElementById("md-product").value.trim();
+
+  results.textContent =
+    "CALCULATION RESULTS\n" +
+    (product ? "Product: " + product + "\n" : "") +
+    "Quantity: " + quantity.toLocaleString("en-KE") + "\n" +
+    "Total Business Cost: KSh " + formatMoney(totalCost) + "\n" +
+    "Cost Per Unit: KSh " + formatMoney(unitCost) + "\n" +
+    "Markup: " + markup.toFixed(2) + "%\n" +
+    "Suggested Selling Price Per Unit: KSh " + formatMoney(sellingPrice) + "\n" +
+    "Projected Total Sales: KSh " + formatMoney(totalSales) + "\n" +
+    "Expected Total Profit: KSh " + formatMoney(totalProfit) + "\n" +
+    "Profit Margin: " + profitMargin.toFixed(2) + "%";
+}
+</script>
+
+</body>
+</html>
